@@ -1,53 +1,79 @@
----
-
- Gerenciador de Estoque em C
-
-Este projeto é um **Gerenciador de Estoque** escrito em C. Ele permite que o usuário insira, liste, atualize e remova produtos de um inventário, além de salvar e carregar os dados em um arquivo de texto. O sistema foi projetado para ser simples e eficiente, funcionando por meio de um menu interativo no terminal.
-
-## Funcionalidades
-
-- **Inserir Produto:** Adiciona um novo produto ao estoque com informações como nome, quantidade, seção, preço, validade, fornecedor, entre outros.
-- **Listar Produtos:** Exibe uma lista de todos os produtos cadastrados, mostrando seus detalhes.
-- **Atualizar Produto:** Permite a atualização das informações de um produto existente.
-- **Remover Produto:** Exclui um produto específico do estoque.
-- **Salvar/Carregar Produtos:** Salva os dados em um arquivo (`produtos.txt`) e carrega os dados automaticamente ao iniciar o programa.
-  
-## Estrutura do Produto
-
-Cada produto possui os seguintes campos:
-
-- **Nome do Produto:** Primeiro e último nome (sem espaços entre as palavras)
-- **Seção:** Um número inteiro representando a seção onde o produto está localizado
-- **Quantidade:** A quantidade disponível do produto em estoque
-- **Preço:** Valor do produto
-- **Data de Validade:** Data em que o produto expira (dd/mm/yyyy)
-- **Categoria:** Tipo de produto (por exemplo, eletrônico, alimento, etc.)
-- **Fornecedor:** Nome do fornecedor
-- **Data de Entrada:** Data em que o produto foi adicionado ao estoque (dd/mm/yyyy)
-
-## Validações
-
-O código possui algumas validações básicas para garantir a integridade dos dados:
-
-- **Data de validade e data de entrada:** Verifica se os dias estão entre 1 e 31 e os meses entre 1 e 12.
-- **Limite de produtos:** O programa só permite cadastrar até 100 produtos, e, caso atinja esse limite, o usuário é notificado.
-
-## Funcionalidades futuras
-
-- Melhoria nas validações de datas para levar em conta meses com menos de 31 dias.
-- Suporte a mais tipos de validação de entrada, como garantir que a quantidade e o preço sejam números positivos.
-
-## Como Executar
-
-1. Clone este repositório.
-2. Compile o código utilizando um compilador de C (como `gcc`):
-   ```bash
-   gcc gerenciador_estoque.c -o gerenciador_estoque
-   ```
-3. Execute o programa:
-   ```bash
-   ./gerenciador_estoque
-   ```
-4. Siga as instruções no menu para inserir, listar, atualizar ou remover produtos.
 
 ---
+
+Inventory Manager in C
+
+This project is an Inventory Manager written in C. It allows the user to insert, list, update, and remove products from an inventory, as well as save and load data from a text file. The system is designed to be simple and efficient, operating through an interactive menu in the terminal.
+
+Features
+
+Insert Product: Adds a new product to the inventory with details such as name, quantity, section, price, expiration date, supplier, and more.
+
+List Products: Displays a list of all registered products, showing their details.
+
+Update Product: Allows updating the information of an existing product.
+
+Remove Product: Deletes a specific product from the inventory.
+
+Save/Load Products: Saves data to a file (produtos.txt) and automatically loads the data when the program starts.
+
+
+Product Structure
+
+Each product has the following fields:
+
+Product Name: First and last name (no spaces between words).
+
+Section: An integer representing the section where the product is located.
+
+Quantity: The available quantity of the product in stock.
+
+Price: The product's price.
+
+Expiration Date: The date when the product expires (dd/mm/yyyy).
+
+Category: Type of product (e.g., electronics, food, etc.).
+
+Supplier: Supplier's name.
+
+Entry Date: The date the product was added to the inventory (dd/mm/yyyy).
+
+
+Validations
+
+The code includes basic validations to ensure data integrity:
+
+Expiration and Entry Dates: Verifies that days are between 1 and 31, and months are between 1 and 12.
+
+Product Limit: The program allows registering up to 100 products. If the limit is reached, the user is notified.
+
+
+Future Features
+
+Improved date validations to account for months with fewer than 31 days.
+
+Support for more input validations, such as ensuring quantity and price are positive numbers.
+
+
+How to Run
+
+1. Clone this repository.
+
+
+2. Compile the code using a C compiler (e.g., gcc):
+
+gcc inventory_manager.c -o inventory_manager
+
+
+3. Run the program:
+
+./inventory_manager
+
+
+4. Follow the menu instructions to insert, list, update, or remove products.
+
+
+
+
+---
+
